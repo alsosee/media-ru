@@ -1,0 +1,53 @@
+- path: Вадим Елистратов.jpg
+  width: 630
+  height: 630
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1922
+  thumb_total_height: 324
+- path: Максим Иванов.jpeg
+  width: 313
+  height: 313
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_x: 1296
+  thumb_width: 313
+  thumb_height: 313
+  thumb_total_width: 1922
+  thumb_total_height: 324
+- path: Павел Пивоваров.jpeg
+  width: 313
+  height: 313
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_x: 1609
+  thumb_width: 313
+  thumb_height: 313
+  thumb_total_width: 1922
+  thumb_total_height: 324
+- path: Иван Талачев.jpeg
+  width: 668
+  height: 668
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_x: 324
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1922
+  thumb_total_height: 324
+- path: Артемий Леонов.jpeg
+  width: 386
+  height: 386
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_x: 648
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1922
+  thumb_total_height: 324
+- path: Кристина Биткулова.jpeg
+  width: 647
+  height: 647
+  thumb: thumbnails_0.jpg?crc=1fe75190
+  thumb_x: 972
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1922
+  thumb_total_height: 324

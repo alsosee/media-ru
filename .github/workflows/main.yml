@@ -1,0 +1,55 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  repository_dispatch:
+    types: [regenerate]
+
+permissions:
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: media
+
+      - name: Run thumnbailer
+        uses: alsosee/thumbnailer@main
+        with:
+          media: ./media
+          r2_account_id: ${{ secrets.R2_ACCOUNT_ID }}
+          r2_access_key_id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          r2_access_key_secret: ${{ secrets.R2_ACCESS_KEY_SECRET }}
+          r2_bucket: media-ru
+
+      - name: Commit changes
+        id: changes
+        run: |
+          cd media
+          if [[ -z $(git status --porcelain) ]]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config --global user.name 'GitHub Actions (main workflow)'
+          git config --global user.email 'gha@alsosee.info'
+          git status --porcelain
+          git add .
+          git commit -m "Update thumbnails [skip ci]"
+          git push
+          echo "pushed=true" >> $GITHUB_OUTPUT
+
+      - name: Trigger deploy
+        uses: peter-evans/repository-dispatch@v2
+        if: steps.changes.outputs.pushed == 'true'
+        with:
+          token: ${{ secrets.TOKEN }}
+          repository: alsosee/finder
+          event-type: deploy-ru
