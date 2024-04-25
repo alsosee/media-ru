@@ -1,26 +1,35 @@
 - path: Горящий Бензовоз.jpeg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=228a0039
+  thumb: thumbnails_0.jpg?crc=16029f8c
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 972
+  thumb_total_width: 1296
   thumb_total_height: 324
 - path: Не занесли.jpg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=228a0039
+  thumb: thumbnails_0.jpg?crc=16029f8c
   thumb_x: 324
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 972
+  thumb_total_width: 1296
   thumb_total_height: 324
 - path: Один Дома.jpeg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=228a0039
+  thumb: thumbnails_0.jpg?crc=16029f8c
   thumb_x: 648
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 972
+  thumb_total_width: 1296
+  thumb_total_height: 324
+- path: Радио-Т.jpg
+  width: 640
+  height: 640
+  thumb: thumbnails_0.jpg?crc=16029f8c
+  thumb_x: 972
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1296
   thumb_total_height: 324
