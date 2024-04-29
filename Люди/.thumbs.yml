@@ -1,108 +1,118 @@
 - path: Алексей Нестеров.jpg
   width: 400
   height: 400
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Артемий Леонов.jpeg
-  width: 386
-  height: 386
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 324
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Вадим Елистратов.jpg
-  width: 630
-  height: 630
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 648
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Григорий Бакунов.jpeg
-  width: 1011
-  height: 1011
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 972
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Евгений Борт.jpeg
-  width: 400
-  height: 400
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 1296
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Иван Талачев.jpeg
-  width: 668
-  height: 668
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 1620
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Кристина Биткулова.jpeg
-  width: 647
-  height: 647
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
+  thumb: thumbnails_0.jpg?crc=38a437cd
   thumb_x: 1944
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 3240
-  thumb_total_height: 637
+  thumb_total_height: 648
+- path: Артемий Леонов.jpeg
+  width: 386
+  height: 386
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 324
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
+- path: Вадим Елистратов.jpg
+  width: 630
+  height: 630
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 648
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
+- path: Григорий Бакунов.jpeg
+  width: 1011
+  height: 1011
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 972
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
+- path: Евгений Борт.jpeg
+  width: 400
+  height: 400
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 1296
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
+- path: Иван Талачев.jpeg
+  width: 668
+  height: 668
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 1620
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
+- path: Кристина Биткулова.jpeg
+  width: 647
+  height: 647
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
 - path: Ксения Покровская.jpeg
   width: 400
   height: 400
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
+  thumb: thumbnails_0.jpg?crc=38a437cd
   thumb_x: 2268
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 3240
-  thumb_total_height: 637
+  thumb_total_height: 648
 - path: Максим Иванов.jpeg
   width: 313
   height: 313
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 324
   thumb_y: 324
   thumb_width: 313
   thumb_height: 313
   thumb_total_width: 3240
-  thumb_total_height: 637
+  thumb_total_height: 648
 - path: Павел Пивоваров.jpeg
   width: 313
   height: 313
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
-  thumb_x: 313
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_x: 637
   thumb_y: 324
   thumb_width: 313
   thumb_height: 313
   thumb_total_width: 3240
-  thumb_total_height: 637
+  thumb_total_height: 648
 - path: Сергей Петренко.jpeg
   width: 324
   height: 324
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
+  thumb: thumbnails_0.jpg?crc=38a437cd
   thumb_x: 2592
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 3240
-  thumb_total_height: 637
-- path: Костя Пушкин.jpeg
-  width: 359
-  height: 359
-  thumb: thumbnails_0.jpg?crc=c17b6d5f
+  thumb_total_height: 648
+- path: Богдан Лисевский.jpeg
+  width: 343
+  height: 343
+  thumb: thumbnails_0.jpg?crc=38a437cd
   thumb_x: 2916
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 3240
-  thumb_total_height: 637
+  thumb_total_height: 648
+- path: Лиза Варвара Аранова.jpeg
+  width: 664
+  height: 664
+  thumb: thumbnails_0.jpg?crc=38a437cd
+  thumb_y: 324
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 3240
+  thumb_total_height: 648
