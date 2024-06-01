@@ -58,7 +58,7 @@ jobs:
           cd media
           git fetch origin $BRANCHNAME || git checkout -b $BRANCHNAME
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/$BRANCHNAME)" ]; then
-            git checkout $BRANCHNAME
+            git checkout -b $BRANCHNAME origin/$BRANCHNAME
           fi
 
       - name: Download from R2
