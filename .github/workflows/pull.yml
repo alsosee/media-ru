@@ -1,0 +1,97 @@
+# A new image was uploaded to R2, so we need to pull it and re-generate thumbnails.
+# Workflow can be triggered manually or via repository_dispatch event (by CloudFlare Pages function).
+# To minimize number of commits in main branch, this workflow creates a new branch, and commits changes there.
+# Then it creates a pull request to merge changes from the new branch to main (if needed).
+#
+# Branch name is generated from the path to the media file,
+# e.g. "Movies/2001/Harry Potter and the Philosopher's Stone/Characters"
+# -> "movies-2001-harry-potter-and-the-philosophers-stone-characters".
+#
+# Commit message is the name of the file, e.g. "Professor McGonagall.jpg".
+name: pull
+
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        description: Path to media to pull from R2, e.g. "Movies/2001/Harry Potter and the Philosopher's Stone/Characters/Harry Potter.jpg"
+        required: true
+  repository_dispatch:
+    types: [pull]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: media
+
+      - name: Set environment variable (workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        uses: alsosee/envset@v1
+        with:
+          name: MEDIAPATH
+          value: ${{ github.event.inputs.path }}
+
+      - name: Set environment variable (repository_dispatch)
+        if: github.event_name == 'repository_dispatch'
+        uses: alsosee/envset@v1
+        with:
+          name: MEDIAPATH
+          value: ${{ github.event.client_payload.path }}
+
+      - name: Set environment variables
+        shell: bash
+        run: |
+          echo "DIRNAME=$(dirname "$MEDIAPATH")" >> $GITHUB_ENV
+          echo "FILENAME=$(basename "$MEDIAPATH")" >> $GITHUB_ENV
+          echo "BRANCHNAME=$(dirname "$MEDIAPATH" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr '~^:' '-' | sed "s/'/-/g")" >> $GITHUB_ENV
+
+      - name: Pull or create branch
+        run: |
+          cd media
+          git fetch origin $BRANCHNAME || git checkout -b $BRANCHNAME
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/$BRANCHNAME)" ]; then
+            git checkout $BRANCHNAME
+          fi
+
+      - name: Download from R2
+        uses: alsosee/r2action@main
+        with:
+          account_id: ${{ secrets.R2_ACCOUNT_ID }}
+          access_key_id: ${{ secrets.R2_ACCESS_KEY_ID_PURGATORY }}
+          access_key_secret: ${{ secrets.R2_ACCESS_KEY_SECRET_PURGATORY }}
+          bucket: media-ru-purgatory
+          operation: get
+          key: ${{ env.MEDIAPATH }}
+          file: media/${{ env.MEDIAPATH }}
+
+      - name: Commit and push
+        shell: bash
+        run: |
+          cd media
+          git config --global user.name 'GitHub Actions (pull workflow)'
+          git config --global user.email 'gha@alsosee.info'
+          git add "$MEDIAPATH"
+          git commit -m "$FILENAME"
+          git push origin $BRANCHNAME
+
+      - name: Create pull request
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd media
+          export STATE=$(gh pr view "$BRANCHNAME" --json state --jq '.state')
+          if [ "$STATE" == "OPEN" ]; then
+            echo "PR exists"
+            exit 0
+          fi
+
+          gh pr create --title "Pull $DIRNAME" --body "Pull $DIRNAME" --base main --head "$BRANCHNAME" --repo alsosee/media-ru
