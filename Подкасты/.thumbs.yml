@@ -45,8 +45,17 @@
 - path: Zavtracast.png
   width: 600
   height: 600
-  thumb: thumbnails_0.png?crc=3e87f54c
+  thumb: thumbnails_0.png?crc=2500d54c
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 324
+  thumb_total_width: 648
+  thumb_total_height: 324
+- path: Думаем Дальше.png
+  width: 600
+  height: 600
+  thumb: thumbnails_0.png?crc=2500d54c
+  thumb_x: 324
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 648
   thumb_total_height: 324
