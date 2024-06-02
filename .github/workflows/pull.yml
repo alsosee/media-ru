@@ -56,9 +56,10 @@ jobs:
       - name: Pull or create branch
         run: |
           cd media
-          git fetch origin $BRANCHNAME || git checkout -b $BRANCHNAME
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/$BRANCHNAME)" ]; then
-            git checkout -b $BRANCHNAME origin/$BRANCHNAME
+          if git ls-remote --exit-code --heads origin $BRANCHNAME; then
+              git checkout $BRANCHNAME
+          else
+              git checkout -b $BRANCHNAME
           fi
 
       - name: Download from R2
