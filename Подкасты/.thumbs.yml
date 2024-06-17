@@ -1,61 +1,70 @@
 - path: Горящий Бензовоз.jpeg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=e67cd899
+  thumb: thumbnails_0.jpg?crc=56c8be4d
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 1620
+  thumb_total_width: 1944
   thumb_total_height: 324
 - path: Один Дома.jpeg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=e67cd899
+  thumb: thumbnails_0.jpg?crc=56c8be4d
   thumb_x: 324
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 1620
+  thumb_total_width: 1944
   thumb_total_height: 324
 - path: Радио-Т.jpg
   width: 640
   height: 640
-  thumb: thumbnails_0.jpg?crc=e67cd899
+  thumb: thumbnails_0.jpg?crc=56c8be4d
   thumb_x: 648
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 1620
+  thumb_total_width: 1944
   thumb_total_height: 324
 - path: Что было раньше.jpeg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=e67cd899
+  thumb: thumbnails_0.jpg?crc=56c8be4d
   thumb_x: 972
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 1620
+  thumb_total_width: 1944
   thumb_total_height: 324
 - path: Не занесли.jpg
   width: 600
   height: 600
-  thumb: thumbnails_0.jpg?crc=e67cd899
+  thumb: thumbnails_0.jpg?crc=56c8be4d
   thumb_x: 1296
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 1620
-  thumb_total_height: 324
-- path: Zavtracast.png
-  width: 600
-  height: 600
-  thumb: thumbnails_0.png?crc=2500d54c
-  thumb_width: 324
-  thumb_height: 324
-  thumb_total_width: 648
+  thumb_total_width: 1944
   thumb_total_height: 324
 - path: Думаем Дальше.png
   width: 600
   height: 600
-  thumb: thumbnails_0.png?crc=2500d54c
+  thumb: thumbnails_0.png?crc=b1c2cd34
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 648
+  thumb_total_height: 324
+- path: Завтракаст.png
+  width: 600
+  height: 600
+  thumb: thumbnails_0.png?crc=b1c2cd34
   thumb_x: 324
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 648
+  thumb_total_height: 324
+- path: Кабинет Лора.jpg
+  width: 500
+  height: 500
+  thumb: thumbnails_0.jpg?crc=56c8be4d
+  thumb_x: 1620
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 1944
   thumb_total_height: 324
