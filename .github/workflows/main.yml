@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: main
+  cancel-in-progress: false
+
 jobs:
   main:
     runs-on: ubuntu-latest
