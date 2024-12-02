@@ -55,18 +55,13 @@ jobs:
         if: steps.changes.outputs.pushed == 'true'
         with:
           token: ${{ secrets.TOKEN }}
-          repository: alsosee/finder
-          event-type: deploy-ru
-
-      - name: Trigger index
-        if: steps.changes.outputs.pushed == 'true'
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.TOKEN }}
-          repository: alsosee/search
-          event-type: index-ru
+          repository: alsosee/ru
+          event-type: deploy
           client-payload: |
             {
-              "force": "${{ steps.thumbnailer.outputs.updated }}"
+              "force": "${{ steps.thumbnailer.outputs.updated }}",
+              "trigger": "media-ru",
+              "ref": "${{ github.ref }}",
+              "sha": "${{ github.sha }}"
             }
   
