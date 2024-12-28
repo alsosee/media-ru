@@ -25,6 +25,7 @@ jobs:
           path: media
 
       - name: Run thumnbailer
+        id: thumbnailer
         uses: alsosee/thumbnailer@main
         with:
           media: media
