@@ -45,19 +45,19 @@
 - path: Думаем Дальше.png
   width: 600
   height: 600
-  thumb: thumbnails_0.png?crc=b1c2cd34
+  thumb: thumbnails_0.png?crc=daec0cdc
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 648
+  thumb_total_width: 972
   thumb_total_height: 324
 - path: Завтракаст.png
   width: 600
   height: 600
-  thumb: thumbnails_0.png?crc=b1c2cd34
+  thumb: thumbnails_0.png?crc=daec0cdc
   thumb_x: 324
   thumb_width: 324
   thumb_height: 324
-  thumb_total_width: 648
+  thumb_total_width: 972
   thumb_total_height: 324
 - path: Кабинет Лора.jpg
   width: 500
@@ -67,4 +67,13 @@
   thumb_width: 324
   thumb_height: 324
   thumb_total_width: 1944
+  thumb_total_height: 324
+- path: Горящий Бензовоз.png
+  width: 1000
+  height: 1000
+  thumb: thumbnails_0.png?crc=daec0cdc
+  thumb_x: 648
+  thumb_width: 324
+  thumb_height: 324
+  thumb_total_width: 972
   thumb_total_height: 324
